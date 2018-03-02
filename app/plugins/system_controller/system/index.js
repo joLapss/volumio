@@ -232,6 +232,7 @@ ControllerSystem.prototype.saveGeneralSettings = function (data) {
     if (data['startup_sound'] != undefined) {
         self.config.set('startupSound', data['startup_sound']);
 	}
+    var temp = temperature('cat', ['/sys/class/thermal/thermal_zone0/temp']);
 
     self.config.set('playerName', player_name);
 
@@ -916,7 +917,9 @@ ControllerSystem.prototype.notifyInstallToDiskStatus = function (data) {
 	}
     self.commandRouter.broadcastMessage(emit, responseData);
 };
-
+ControllerSystem.prototype.getCpuTemp = function (data) {
+  data["cpu_temperature"] ="45";
+};
 ControllerSystem.prototype.saveHDMISettings = function (data) {
     var self = this;
     console.log(JSON.stringify(data))

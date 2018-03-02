@@ -13,7 +13,8 @@
         "label": "TRANSLATE.COMMON.SAVE",
         "data": [
           "player_name",
-          "startup_sound"
+          "startup_sound",
+          "cpu_temperature"
         ]
       },
       "content": [
@@ -25,6 +26,20 @@
           "label": "TRANSLATE.SYSTEM.PLAYER_NAME",
           "value": "volumio"
         },
+        {
+          "id": "cpu_temperature",
+          "type":"text",
+          "element": "input",
+          "doc": "give the CPU temperature",
+          "label": "cpu temp (C)",
+          "value": "0"
+        },
+        {
+          "id":"read_cpu_temp",
+          "element": "button",
+          "label": "Get cpu temp",
+          "onClick": {"type":"controller", "endpoint":"system_controller/system", "method":"getCpuTemp"}
+        }
         {
           "id":"startup_sound",
           "element": "switch",
