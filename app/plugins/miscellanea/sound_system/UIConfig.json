@@ -5,10 +5,10 @@
     {
       "id": "language_selector",
       "element": "section",
-      "label": "test button",
+      "label": "Amplifier settings",
       "icon": "fa-language",
       "onSave": {"type":"controller", "endpoint":"miscellanea/appearance", "method":"setLanguage"},
-      "saveButton": {
+      "switch": {
         "label": "TRANSLATE.COMMON.SAVE",
         "data": [
           "language"
