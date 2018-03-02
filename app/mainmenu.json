@@ -10,6 +10,6 @@
     {"id": "modal", "name": "TRANSLATE.MAIN_MENU.ALARM", "params": {"modalName": "modal-alarm-clock"}},
     {"id": "modal", "name": "TRANSLATE.MAIN_MENU.SLEEP", "params": {"modalName": "modal-sleep"}},
     {"id": "modal", "name": "TRANSLATE.MAIN_MENU.SHUTDOWN", "params": {"modalName": "modal-power-off"}},
-	  {"id": "link", "name": "Gateway", "params": {"url": "www.google.com"}}
+	  {"id": "link", "name": "Gateway", "params": {"url": "http://192.168.1.1"}}
   ]
 }
